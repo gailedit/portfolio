@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: var(--bs-primary);
   text-decoration: underline;
 }
 a:hover {
-  color: #c34e2e;
+  color: var(--bs-success);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -332,6 +332,7 @@ th {
 
 label {
   display: inline-block;
+  color: white;
 }
 
 button {
@@ -2166,6 +2167,7 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 .col-form-label {
@@ -2174,6 +2176,7 @@ progress {
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
+  color: white;
 }
 
 .col-form-label-lg {
@@ -2186,6 +2189,7 @@ progress {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
+  color: white;
 }
 
 .form-text {
@@ -2234,15 +2238,15 @@ progress {
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: .5;
 }
 .form-control:-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: .5;
 }
 .form-control::placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: .5;
 }
 .form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
@@ -2535,6 +2539,7 @@ textarea.form-control-lg {
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   opacity: 0.5;
+  color: var(--bs-gray-700);
 }
 
 .form-switch {
@@ -2695,13 +2700,13 @@ textarea.form-control-lg {
   padding: 1rem 0.75rem;
 }
 .form-floating > .form-control::-moz-placeholder {
-  color: transparent;
+  color: var(--bs-gray-600);
 }
 .form-floating > .form-control:-ms-input-placeholder {
-  color: transparent;
+  color: var(--bs-gray-600);
 }
 .form-floating > .form-control::placeholder {
-  color: transparent;
+  color: var(--bs-gray-600);
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
